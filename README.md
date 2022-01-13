@@ -1,6 +1,6 @@
-<img src="https://user-images.githubusercontent.com/67345874/149277505-185ad4e9-2b31-4bd3-986a-b9ee050f3f6c.png" alt="Website screenshot" height="382px">
-
 # 🚀 Shopify 2022 Frontend Developer Challenge | Spacetagram
+
+<p align="center"><img src="https://user-images.githubusercontent.com/67345874/149279435-f2b96739-a7ec-4a39-82e0-068e64594be8.gif" alt="Website demo" height="382px"></p>
 
 The place to sit back and watch the galaxy unfold.
 
@@ -21,5 +21,3 @@ $ cd shopify-spacetagram/
 $ npm install
 $ node app.js
 ```
-
-<img src="https://user-images.githubusercontent.com/67345874/149279435-f2b96739-a7ec-4a39-82e0-068e64594be8.gif" alt="Website screenshot" height="382px">

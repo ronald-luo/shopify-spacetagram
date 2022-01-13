@@ -1,0 +1,323 @@
+/* SCSS for Shopify Frontend Challenge */
+/* Title: Spacetagram 2022 */
+/* Written by: Ronald Luo */
+/* GitHub: https://github.com/ronald-luo/ */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+$font0: "Poppins";
+$font1: "Lora";
+
+$color6: #ffffff;
+$color5: #228cfb;
+$color4: #1f6feb;
+$color3: #5d5d5d;
+$color2: #414141;
+$color1: #2b2b2b;
+$color0: #1c1c1c;
+
+$margin0: 10px;
+$margin1: 20px;
+$margin2: 40px;
+$margin3: 16em;
+
+
+/* MEDIA QUERIES */
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin tablet {
+    @media(min-width: #{$tablet}) {
+        @content
+    }
+};
+
+/* FONT SYLING */
+h2 {
+    font-family: $font0;
+    font-size: 26px;
+    line-height: 42px;
+    color: $color6;
+}
+
+h3 {
+    font-family: $font0;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color6;
+    margin-top: $margin0;
+}
+
+p {
+    font-family: $font1;
+    font-size: 16px;
+    line-height: 26px;
+    color: darken($color6, 20%);
+    margin-top: $margin1;
+}
+
+/* MAIN SYLING */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color0;
+}
+
+/* HEADER STYLING */
+
+header {
+    max-width: 375px;
+    height: 50px;
+    border: 1px solid $color6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 $margin1 0 $margin1;
+    margin: 0 auto $margin1 auto;
+    animation-name: header-in;
+    animation-duration: 0.8s;
+
+    @include tablet {
+        max-width: 600px;
+    }
+
+}
+
+@keyframes header-in {
+    0% {
+      transform: translateY(20em);
+      opacity: 0;
+    }
+}
+
+header h1 a {
+    text-decoration: none;
+    color: $color6;
+    justify-content: start;
+    font-family: $font0;
+    display: flex;
+    height: 100%;
+    display:flex;
+    align-items:center;
+}
+
+nav {
+    align-self: center;
+
+    li {
+        display: inline-block;
+        list-style: none;
+        margin-left: $margin0;
+
+        @include tablet {
+            margin-left: $margin2;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color6;
+        font-family: $font1;
+
+        &:hover {
+            color: darken($color6, 35%);
+            transition: color 0.2s ease-in-out;
+        }
+    }
+}
+
+/* SKIP NAV */
+
+.skip-to-content-link {
+    background-color: darken($color4, 13%);
+    text-decoration: none;
+    color: $color6;
+    font-family: $font1;
+    text-align: center;
+    height: 30px;
+    width: auto;
+    left: 40%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-105%);
+    transition: transform 0.3s;
+    animation-name: skip-in;
+    animation-duration: 1.5s;
+  }
+
+@keyframes skip-in {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+  
+.skip-to-content-link:focus {
+transform: translateY(0%);
+}
+  
+
+/* CARD STYLING */
+
+.container {
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    animation-name: container-in;
+    animation-duration: 2s;
+
+    @include tablet {
+        max-width: 600px;
+        // padding: $margin3;
+    }
+}
+
+@keyframes container-in {
+    0% {
+      transform: translateY(30em);
+      opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+.image-card {
+    display: block;
+    margin: auto;
+    border: 1px solid $color6;
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    border: 1px solid white;
+    margin: 0 auto 0 auto;
+}
+
+figcaption {
+    background-color: $color1;
+    padding: 10px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 375px;
+}
+
+.like-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px;
+}
+
+.like-btn {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid $color6;
+    font-family: $font0;
+    width: 100%;
+    height: 40px;
+    color: $color6;
+    background-color: $color0;
+    align-self: flex-start;
+    margin: auto auto 10px auto;
+
+    &:hover {
+        background-color: lighten($color0, 80%);
+        transition: background-color 0.2s ease-in-out;
+        color: black;
+        cursor: pointer;
+      }
+}
+
+.liked-btn {
+    background-color: darken($color4, 13%);
+
+    &:hover {
+        color: $color6;
+        background-color: darken($color4, 13%);
+    }
+}
+
+/* SHARE BTN */
+
+.share-btn {
+    color: $color6;
+    background-color: $color0;
+    border: 1px solid $color6;
+
+    &:hover {
+        background-color: lighten($color0, 80%);
+        transition: background-color 0.2s ease-in-out;
+        color: black;
+        cursor: pointer;
+      }
+}
+
+/* SHARE ALERT */
+
+.alert {
+    padding: $margin1 auto $margin1 auto;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100vw;
+    background-color: darken($color4, 13%);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: $font0;
+    animation-name: alert;
+    animation-duration: 3s;
+
+    @keyframes alert {
+        50% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+}
+
+/* FOOTER STYLING */
+
+footer {
+    margin: $margin0 0 $margin0 0;
+    display: grid;
+    justify-items: center;
+    animation-name: alert;
+    animation-duration: 2s;
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0%;
+    }
+}

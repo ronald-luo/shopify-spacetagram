@@ -1,0 +1,377 @@
+/* SCSS for Shopify Frontend Challenge */
+/* Title: Spacetagram 2022 */
+/* Written by: Ronald Luo */
+/* GitHub: https://github.com/ronald-luo/ */
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* VARIABLES */
+/* MEDIA QUERIES */
+/* FONT SYLING */
+h2 {
+  font-family: "Poppins";
+  font-size: 26px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+p {
+  font-family: "Lora";
+  font-size: 16px;
+  line-height: 26px;
+  color: #cccccc;
+  margin-top: 20px;
+}
+
+/* MAIN SYLING */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1c1c1c;
+}
+
+/* HEADER STYLING */
+header {
+  max-width: 375px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px 0 20px;
+  margin: 0 auto 20px auto;
+  -webkit-animation-name: header-in;
+          animation-name: header-in;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+@media (min-width: 768px) {
+  header {
+    max-width: 600px;
+  }
+}
+
+@-webkit-keyframes header-in {
+  0% {
+    -webkit-transform: translateY(20em);
+            transform: translateY(20em);
+    opacity: 0;
+  }
+}
+
+@keyframes header-in {
+  0% {
+    -webkit-transform: translateY(20em);
+            transform: translateY(20em);
+    opacity: 0;
+  }
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-family: "Poppins";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  nav li {
+    margin-left: 40px;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lora";
+}
+
+nav a:hover {
+  color: #a6a6a6;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+/* SKIP NAV */
+.skip-to-content-link {
+  background-color: #1052b7;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lora";
+  text-align: center;
+  height: 30px;
+  width: auto;
+  left: 40%;
+  padding: 8px;
+  position: absolute;
+  -webkit-transform: translateY(-105%);
+          transform: translateY(-105%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-animation-name: skip-in;
+          animation-name: skip-in;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes skip-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+@keyframes skip-in {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+.skip-to-content-link:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+/* CARD STYLING */
+.container {
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  -webkit-animation-name: container-in;
+          animation-name: container-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@-webkit-keyframes container-in {
+  0% {
+    -webkit-transform: translateY(30em);
+            transform: translateY(30em);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+@keyframes container-in {
+  0% {
+    -webkit-transform: translateY(30em);
+            transform: translateY(30em);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+}
+
+.image-card {
+  display: block;
+  margin: auto;
+  border: 1px solid #ffffff;
+  width: 100%;
+}
+
+figure {
+  width: 100%;
+  border: 1px solid white;
+  margin: 0 auto 0 auto;
+}
+
+figcaption {
+  background-color: #2b2b2b;
+  padding: 10px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+iframe {
+  width: 100%;
+  height: 375px;
+}
+
+.like-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  margin: 20px;
+}
+
+.like-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  font-family: "Poppins";
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+  background-color: #1c1c1c;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: auto auto 10px auto;
+}
+
+.like-btn:hover {
+  background-color: #e8e8e8;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+
+.liked-btn {
+  background-color: #1052b7;
+}
+
+.liked-btn:hover {
+  color: #ffffff;
+  background-color: #1052b7;
+}
+
+/* SHARE BTN */
+.share-btn {
+  color: #ffffff;
+  background-color: #1c1c1c;
+  border: 1px solid #ffffff;
+}
+
+.share-btn:hover {
+  background-color: #e8e8e8;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  color: black;
+  cursor: pointer;
+}
+
+/* SHARE ALERT */
+.alert {
+  padding: 20px auto 20px auto;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100vw;
+  background-color: #1052b7;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Poppins";
+  -webkit-animation-name: alert;
+          animation-name: alert;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes alert {
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes alert {
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* FOOTER STYLING */
+footer {
+  margin: 10px 0 10px 0;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-animation-name: alert;
+          animation-name: alert;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@keyframes alert {
+  0% {
+    opacity: 0%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

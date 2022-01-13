@@ -4,7 +4,7 @@
 
 The place to sit back and watch the galaxy unfold.
 
-[LIVE DEMO](https://spacetagram.ronald-luo.repl.co/)
+[LIVE DEMO](https://shopify-spacetagram.ronald-luo.repl.co/)
 
 ## Features
 

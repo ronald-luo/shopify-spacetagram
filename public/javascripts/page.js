@@ -151,7 +151,7 @@ generateImage()
     
                 setTimeout(() => {
                     document.body.removeChild(alertCopied)
-                },3000)
+                }, 5000)
     
             })
         })

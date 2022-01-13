@@ -165,7 +165,6 @@ generateImage()
                 let url = window.location.href + btn.getAttribute('data-id')
                 navigator.clipboard.writeText(url);
     
-                
                 // alert("Copied the text: " + url);
     
                 const alertCopied = document.createElement('div')
@@ -175,7 +174,7 @@ generateImage()
     
                 setTimeout(() => {
                     document.body.removeChild(alertCopied)
-                },3000)
+                },5000)
     
             })
         })

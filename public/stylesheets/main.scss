@@ -280,7 +280,6 @@ iframe {
 
 .alert {
     padding: $margin1 auto $margin1 auto;
-    animation-fill-mode: forwards;
     visibility: visible;
     position: fixed;
     top: 0;
@@ -294,15 +293,16 @@ iframe {
     line-height: 32px;
     font-family: $font0;
     animation-name: alert;
-    animation-duration: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
-    @keyframes alert {
-        50% {
-            opacity: 100%;
-        }
-        100% {
-            opacity: 0%;
-        }
+@keyframes alert {
+    100% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 100%;
     }
 }
 

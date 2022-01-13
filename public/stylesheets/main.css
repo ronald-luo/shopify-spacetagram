@@ -319,8 +319,6 @@ iframe {
 /* SHARE ALERT */
 .alert {
   padding: 20px auto 20px auto;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   visibility: visible;
   position: fixed;
   top: 0;
@@ -335,25 +333,27 @@ iframe {
   font-family: "Poppins";
   -webkit-animation-name: alert;
           animation-name: alert;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes alert {
-  50% {
-    opacity: 100%;
-  }
   100% {
     opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
   }
 }
 
 @keyframes alert {
-  50% {
-    opacity: 100%;
-  }
   100% {
     opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
   }
 }
 

@@ -101,7 +101,7 @@ for (let i = 0; i < localStorage.length; i++) {
         
                     setTimeout(() => {
                         document.body.removeChild(alertCopied)
-                    },3000)
+                    }, 5000)
         
                 })
             })

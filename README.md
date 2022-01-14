@@ -21,3 +21,8 @@ $ cd shopify-spacetagram/
 $ npm install
 $ node app.js
 ```
+
+## Technologies used
+
+- ExpressJS / NodeJS
+- HTML / SASS

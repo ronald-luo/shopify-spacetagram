@@ -11,6 +11,7 @@ The place to sit back and watch the galaxy unfold.
 - Load NASA [APOD](https://apod.nasa.gov/apod/) pictures from last 20 days
 - Save and access liked photos (saved on local storage)
 - Share photos with friends
+- Responsive and accessible
 - Skip Nav feature (press tab)
 
 ## Installation
@@ -26,3 +27,4 @@ $ node app.js
 
 - ExpressJS / NodeJS
 - HTML / SASS
+- Local storage

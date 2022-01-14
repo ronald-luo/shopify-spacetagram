@@ -26,7 +26,7 @@
 - Save and access liked photos (saved on local storage)
 - Share photos with friends
 - Responsive and accessible
-- Skip Nav feature (press tab)
+- Skip nav feature (press tab)
 
 ## Installation
 
@@ -42,3 +42,11 @@ $ node app.js
 - ExpressJS / NodeJS
 - HTML / SASS
 - Local storage
+
+## Accessibility
+
+<p align="center"><img src="https://user-images.githubusercontent.com/67345874/149565355-ecbad9ea-6e4d-46b4-bc8a-78abc44273fc.png" alt="Accessibility" height="200px"></p>
+
+<p align="center">
+    <a href="https://www.webaccessibility.com/">Accessibility Checker</a>
+</p>

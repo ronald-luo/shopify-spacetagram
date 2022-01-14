@@ -1,3 +1,9 @@
+/* JavaScript for Shopify Frontend Challenge */
+/* Title: Spacetagram 2022 */
+/* Written by: Ronald Luo */
+/* GitHub: https://github.com/ronald-luo/ */
+
+// Fetches data from APOTD API call and returns array of objects
 const generateImage = async function (query) {
     let data;
     try {
@@ -91,17 +97,16 @@ for (let i = 0; i < localStorage.length; i++) {
                     let url = window.location.origin + '/' + btn.getAttribute('data-id')
                     navigator.clipboard.writeText(url);
         
-                    
-                    // alert("Copied the text: " + url);
-        
+                    // create alert at bottom of page
                     const alertCopied = document.createElement('div')
                     alertCopied.classList.add('alert')
                     alertCopied.textContent = "Copied to clipboard: " + url
                     document.body.appendChild(alertCopied)
         
+                    // remove alert after 3s
                     setTimeout(() => {
                         document.body.removeChild(alertCopied)
-                    }, 5000)
+                    }, 3000)
         
                 })
             })

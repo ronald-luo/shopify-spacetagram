@@ -1,6 +1,10 @@
+/* JavaScript for Shopify Frontend Challenge */
+/* Title: Spacetagram 2022 */
+/* Written by: Ronald Luo */
+/* GitHub: https://github.com/ronald-luo/ */
+
 // Uses current date to create start_date and end_date.
 // return an array date_range, in the following format: [start_date, end_date]; date = YYYY-MM-DD.
-
 const getDateRange = function () {
     let monthsNums = {
         'Jan': '01',
@@ -23,7 +27,7 @@ const getDateRange = function () {
     return [String(([start_date[3], monthsNums[start_date[1]], start_date[2]].join('-'))), String(([end_date[3], monthsNums[end_date[1]], end_date[2]].join('-')))]
 }
 
-//
+// Fetches data from APOTD API call and returns array of objects
 const generateImage = async function () {
     let data;
     try {
@@ -40,7 +44,6 @@ generateImage()
 .then((data) => {
 
     // render a card
-    // 
     const container = document.querySelector('.container')
 
     data.reverse().forEach((obj) => {
@@ -162,19 +165,19 @@ generateImage()
             btn.addEventListener('click', () => {
     
                 // get URL of card
-                let url = window.location.href + btn.getAttribute('data-id')
+                let url = window.location.origin + '/' + btn.getAttribute('data-id')
                 navigator.clipboard.writeText(url);
-    
-                // alert("Copied the text: " + url);
-    
+                
+                // create alert at bottom of page
                 const alertCopied = document.createElement('div')
                 alertCopied.classList.add('alert')
                 alertCopied.textContent = "Copied to clipboard: " + url
                 document.body.appendChild(alertCopied)
     
+                // remove alert after 3s
                 setTimeout(() => {
                     document.body.removeChild(alertCopied)
-                },5000)
+                }, 3000)
     
             })
         })

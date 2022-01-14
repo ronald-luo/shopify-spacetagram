@@ -3,7 +3,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/67345874/149279435-f2b96739-a7ec-4a39-82e0-068e64594be8.gif" alt="Website demo" height="382px"></p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/67345874/149562347-b4fdcfe7-f12c-40f1-ba5b-887e94cd6dda.png" alt="Logo" width="100" height="100">
+    <img src="https://user-images.githubusercontent.com/67345874/149562347-b4fdcfe7-f12c-40f1-ba5b-887e94cd6dda.png" alt="Logo" width="100" height="100" style="object-fit:cover">
   </a>
 
   <h3 align="center">Spacestagram</h3>

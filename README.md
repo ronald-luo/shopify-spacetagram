@@ -2,9 +2,23 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67345874/149279435-f2b96739-a7ec-4a39-82e0-068e64594be8.gif" alt="Website demo" height="382px"></p>
 
-The place to sit back and watch the galaxy unfold.
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/67345874/149562347-b4fdcfe7-f12c-40f1-ba5b-887e94cd6dda.png" alt="Logo" width="100" height="100">
+  </a>
 
-[LIVE DEMO](https://shopify-spacetagram.ronald-luo.repl.co/)
+  <h3 align="center">Spacestagram</h3>
+
+  <p align="center">
+    The place to sit back and watch the galaxy unfold.
+    <br />
+    <br />
+    <a href="https://shopify-spacetagram.ronald-luo.repl.co/">View App</a>
+    ·
+    <a href="https://api.nasa.gov/">API Source</a>
+    ·
+    <a href="https://www.linkedin.com/in/ronald-luo-a0ba181a4/">Ron's LinkedIn</a>
+  </p>
+</p>
 
 ## Features
 

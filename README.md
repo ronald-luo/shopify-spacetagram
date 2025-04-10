@@ -12,7 +12,7 @@
     The place to sit back and watch the galaxy unfold.
     <br />
     <br />
-    <a href="https://shopify-spacetagram.ronald-luo.repl.co/">View App</a>
+    <a href="[https://replit.com/@ronald-luo/shopify-spacetagram">View App</a>
     ·
     <a href="https://api.nasa.gov/">API Source</a>
     ·
